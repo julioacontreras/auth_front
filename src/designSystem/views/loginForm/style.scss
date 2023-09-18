@@ -1,0 +1,10 @@
+
+section.loginForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .stackLogin {
+        align-content: flex-start;
+        width: clamp(300px, 50%, 400px);
+    }    
+}

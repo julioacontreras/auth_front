@@ -1,0 +1,13 @@
+@import '../../style/constants';
+
+a.link {
+    color: $dark;
+    padding: 0;
+    margin: 0;
+    font-size: $font_default;
+    text-decoration: none;
+    text-transform: none;
+    &:hover {
+        color: $primary;
+    }
+}

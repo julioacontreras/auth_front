@@ -1,0 +1,15 @@
+@import 'constants';
+@import 'inputs';
+@import 'spacer';
+@import 'buttons';
+@import 'fonts';
+@import 'alerts';
+@import 'loaders';
+
+body {
+    background-color: $light;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $font_default;
+}
+
+

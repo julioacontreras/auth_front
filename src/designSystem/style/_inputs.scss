@@ -1,0 +1,17 @@
+input[type="email"], input[type="text"], input[type="password"] {
+    color: $dark;
+    background-color: $light;
+    border-radius: $radius_default;
+    border-color: $borderPrimary;
+    border-style: solid;
+    padding: $space_default $space_sm $space_default $space_sm;
+    font-size: $font_default;
+    box-shadow: $box-shadow;
+    &:hover, &:focus-visible, &:focus-within, &:target, &:active {
+        border-color: $primary;
+        box-shadow: $box-shadow-hover;
+    }
+    &:focus {
+        outline-color: $primary;        
+    }
+}

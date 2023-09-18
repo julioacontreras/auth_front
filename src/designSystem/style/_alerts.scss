@@ -1,0 +1,40 @@
+.alert {
+    display: grid; 
+    box-shadow: $box-shadow;
+    border-radius: $radius_default;
+    padding: $space_default;
+    grid-template-columns: 0.9fr 0.1fr;
+    .close-area {
+        justify-self: end;
+        align-self: center;
+    }
+    .message-area {
+        justify-self: start;
+        align-self: center;
+    }
+    button {
+        color: $dark;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+.alert-success {
+    background-color: $success;    
+    border-color: $borderPrimary;
+}
+
+.alert-info {
+    background-color: $info;    
+    border-color: $borderPrimary;
+}
+
+.alert-warning {
+    background-color: $warning;    
+    border-color: $borderPrimary;
+}
+
+.alert-danger {
+    background-color: $danger;    
+    border-color: $borderPrimary;
+}

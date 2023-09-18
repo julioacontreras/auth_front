@@ -1,0 +1,14 @@
+button {
+    color: $light;
+    padding: $space_default $space_sm $space_default $space_sm;
+    font-size: $font_default;
+    box-shadow: $box-shadow;
+    &.primary {
+        background-color: $primary;
+        border-radius: $radius_default;
+        border-style: none;
+    }
+    &:disabled {
+        background-color: $disabled !important;
+    }
+}
