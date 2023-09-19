@@ -5,6 +5,7 @@ Micro frontend using Svelte and Bun
 ## Requirements
 
 * Node 18
+* [BunSh](https://bun.sh/docs) 1.0
 
 ## Getting started
 
@@ -13,13 +14,13 @@ Micro frontend using Svelte and Bun
 bun install
 
 # run application in develop mode
-npm run dev
+bun run dev
 
 # build project
-npm run build
+bun run build
 
 # run project builded
-npm run preview
+bun run preview
 ```
 
 # Mocks
