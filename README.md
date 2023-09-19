@@ -1,6 +1,6 @@
 # Project 🥤
 
-Micro frontend using Svelte and Bun
+Micro frontend authentication
 
 ## Requirements 🧸
 
