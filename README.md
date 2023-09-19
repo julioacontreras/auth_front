@@ -25,6 +25,6 @@ bun run preview
 
 # Mocks
 
-Can open the file `mocks/mocks.json` with the application [Mockoon]([Mockoon](https://mockoon.com/).
+Can open the file `mocks/mocks.json` with the application [Mockoon](https://mockoon.com/).
 
 
