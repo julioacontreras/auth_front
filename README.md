@@ -1,13 +1,13 @@
-# Project
+# Project 🥤
 
 Micro frontend using Svelte and Bun
 
-## Requirements
+## Requirements 🧸
 
 * Node 18
 * [BunSh](https://bun.sh/docs) 1.0
 
-## Getting started
+## Getting started 🚀
 
 ```bash
 # install dependencies
@@ -25,6 +25,6 @@ bun run preview
 
 # Mocks
 
-Can open the file `mocks/mocks.json` with the application `Mockoon`.
+Can open the file `mocks/mocks.json` with the application [Mockoon]([Mockoon](https://mockoon.com/)).
 
 
