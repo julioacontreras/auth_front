@@ -1,1 +1,3 @@
-{}
+{
+    "endpoints.auth.login": "http://localhost:4000/api/auth/signin"
+}
