@@ -1,14 +1,14 @@
 button {
-    color: $light;
-    padding: $space_default $space_sm $space_default $space_sm;
-    font-size: $font_default;
-    box-shadow: $box-shadow;
+    color: colors.$light;
+    padding: spaces.$space_default spaces.$space_sm spaces.$space_default spaces.$space_sm;
+    font-size: fonts.$font_default;
+    box-shadow: shadows.$box-shadow;
     &.primary {
-        background-color: $primary;
-        border-radius: $radius_default;
+        background-color: colors.$primary;
+        border-radius: radius.$radius_default;
         border-style: none;
     }
     &:disabled {
-        background-color: $disabled !important;
+        background-color: colors.$disabled !important;
     }
 }

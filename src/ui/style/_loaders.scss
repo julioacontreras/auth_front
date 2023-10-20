@@ -3,8 +3,8 @@
     &:after {
         content: " ";
         display: block;
-        border: 6px solid $light;
-        border-color: $light transparent $light transparent;
+        border: 6px solid colors.$light;
+        border-color: $light transparent colors.$light transparent;
         animation: loader-animated 1.2s linear infinite;
       }
 }
