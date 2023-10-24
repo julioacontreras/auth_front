@@ -1,4 +1,6 @@
 <script lang="ts">
+	import './style.scss'
+	
 	// Adapters
 	import { i18n } from '$lib/core/adapters/i18n'
 
