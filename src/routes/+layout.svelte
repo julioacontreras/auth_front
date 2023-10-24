@@ -1,18 +1,23 @@
-<script>
-	import '../ui/style/main.scss'
+<script lang="ts">
+	import '$lib/ui/style/main.scss'
 	import { onMount } from 'svelte';
-	import '@/start'
+	import '$lib/start'
 
 	// Adapters
-	import { i18n } from '@/lib/core/adapters/i18n'
+	import { i18n } from '$lib/core/adapters/i18n'
+
+	// Reactive language
+	let t: Record<string, unknown> = {};
+	i18n.subscribe((data: unknown) => {
+		t = data as Record<string, unknown>;
+	});
 	
 	// Components
-	import TopBarMenu from '@/lib/ui/components/topBarMenu/index.svelte'
-	import Link from '@/lib/ui/components/link/index.svelte'
+	import TopBarMenu from '$lib/ui/components/topBarMenu/index.svelte'
+	import Link from '$lib/ui/components/link/index.svelte'
 
 	// Reactive variables
 	$: showPage = false
-
 
     onMount(async () => {
         i18n.setLang(await i18n.getDefaultLang())
@@ -25,11 +30,11 @@
 	<TopBarMenu>
 		<div slot="end" class="end">
 			<Link href="/">
-				{i18n.t('general.login')}
+				{t['general.login']}
 			</Link>
 
 			<Link href="/register">
-				{i18n.t('general.register')}
+				{t['general.register']}
 			</Link>
 		</div>
 	</TopBarMenu>

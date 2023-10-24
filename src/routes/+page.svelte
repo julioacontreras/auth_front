@@ -12,6 +12,12 @@
 	$: showError = false
 	$: messageError = ''
 
+	// Reactive language
+	let t: Record<string, string> = {};
+	i18n.subscribe((data: unknown) => {
+		t = data as Record<string, string>;
+	});
+
     const errorActions = (error: any) => {
 		messageError = error.message
 		showError = true
@@ -33,12 +39,12 @@
 	isVisible={showError}
 />
 <LoginForm
-	titleHeader={i18n.t('loginView.title')}
-	mandatoryFieldMessage={i18n.t('general.mandatoryField')}
-	emailNotValidMessage={i18n.t('general.emailNotValid')}
-	titleLogin={i18n.t('general.login')}
-	titleEmail={i18n.t('general.inputEmail.title')}
-	titlePassword={i18n.t('general.inputPassword.title')}
+	titleHeader={t['loginView.title']}
+	mandatoryFieldMessage={t['general.mandatoryField']}
+	emailNotValidMessage={t['general.emailNotValid']}
+	titleLogin={t['general.login']}
+	titleEmail={t['general.inputEmail.title']}
+	titlePassword={t['general.inputPassword.title']}
 	login={login}
 	errorActions={errorActions}
 	successActions={successActions}
