@@ -1,0 +1,9 @@
+@use '../../style/colors';
+@use '../../style/fonts';
+
+p.label {
+    color: colors.$dark;
+    padding: 0;
+    margin: 0;
+    font-size: fonts.$font_default;
+}

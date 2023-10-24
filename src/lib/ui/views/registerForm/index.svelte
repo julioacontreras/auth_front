@@ -1,7 +1,7 @@
 <script lang="ts">
     import './style.scss'
     import { useForm, HintGroup, Hint, email, required, } from 'svelte-use-form'
-    import { useValueMatch } from '@/designSystem/events/valueMatch'
+    import { useValueMatch } from '@/lib/ui/validations/valueMatch'
     const form = useForm()
 
     // Components

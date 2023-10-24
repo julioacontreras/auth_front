@@ -1,0 +1,14 @@
+@use '../../style/colors';
+@use '../../style/fonts';
+
+a.link {
+    color: colors.$dark;
+    padding: 0;
+    margin: 0;
+    font-size: fonts.$font_default;
+    text-decoration: none;
+    text-transform: none;
+    &:hover {
+        color: colors.$primary;
+    }
+}

@@ -1,9 +1,9 @@
-@import '../../style/constants';
+@use '../../style/spaces';
 
 nav.topBarMenu {
     display: flex;
     flex-direction: row;
-    padding: $space_default;
+    padding: spaces.$space_default;
     justify-content: end;
     .end {
         display: flex;

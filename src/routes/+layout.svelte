@@ -1,14 +1,14 @@
 <script>
-	import '../designSystem/style/main.scss'
+	import '../ui/style/main.scss'
 	import { onMount } from 'svelte';
 	import '@/start'
 
 	// Adapters
-	import { i18n } from '@/core/adapters/i18n'
+	import { i18n } from '@/lib/core/adapters/i18n'
 	
 	// Components
-	import TopBarMenu from '@/designSystem/components/topBarMenu/index.svelte'
-	import Link from '@/designSystem/components/link/index.svelte'
+	import TopBarMenu from '@/lib/ui/components/topBarMenu/index.svelte'
+	import Link from '@/lib/ui/components/link/index.svelte'
 
 	// Reactive variables
 	$: showPage = false

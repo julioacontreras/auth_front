@@ -1,13 +1,13 @@
 <script lang="ts">
 	// Adapters
-	import { i18n } from '@/core/adapters/i18n'
+	import { i18n } from '$lib/core/adapters/i18n'
 
 	// Use cases
-	import { login } from '@/businessRules/authentication/useCases/login'
+	import { login } from '$lib/businessRules/authentication/useCases/login'
 
 	// Components & views
-	import LoginForm from '@/designSystem/views/loginForm/index.svelte'
-	import Alert from '@/designSystem/components/alert/index.svelte'
+	import LoginForm from '$lib/ui/views/loginForm/index.svelte'
+	import Alert from '$lib/ui/components/alert/index.svelte'
 
 	$: showError = false
 	$: messageError = ''

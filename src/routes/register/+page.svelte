@@ -1,13 +1,13 @@
 <script lang="ts">
 	// Adapters
-	import { i18n } from '@/core/adapters/i18n'
+	import { i18n } from '@/lib/core/adapters/i18n'
 
 	// Use cases
-	import { register } from '@/businessRules/authentication/useCases/register'
+	import { register } from '@/lib/businessRules/authentication/useCases/register'
 
 	// Components & views
-	import RegisterForm from '@/designSystem/views/registerForm/index.svelte'
-	import Alert from '@/designSystem/components/alert/index.svelte'
+	import RegisterForm from '@/lib/ui/views/registerForm/index.svelte'
+	import Alert from '@/lib/ui/components/alert/index.svelte'
 
 	// Reactive variables
 	$: showError = false
