@@ -1,8 +1,6 @@
-@use '../../style/fonts';
-
 p.label {
     color: var(--text-primary);
     padding: 0;
     margin: 0;
-    font-size: fonts.$font_default;
+    font-size: var(--font-default);
 }
