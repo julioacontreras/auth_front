@@ -48,7 +48,7 @@
     <form use:form>
         <Stack classes="stackRegister">
             <Spacer size="sm" />
-            <Label text="{titleHeader}" classes="font-lg"/>
+            <h2>{titleHeader}</h2>
             <Spacer size="sm" />
 
             <InputText name="name" placeholder="{titleName}" validator={[required]} />

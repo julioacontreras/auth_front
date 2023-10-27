@@ -41,7 +41,7 @@
     <form use:form>
         <Stack classes="stackLogin">
             <Spacer size="sm" />
-            <Label text="{titleHeader}" classes="font-lg"/>
+            <h2>{titleHeader}</h2>
             <Spacer size="sm" />
 
             <InputEmail placeholder="{titleEmail}" validator={[required, email]} />

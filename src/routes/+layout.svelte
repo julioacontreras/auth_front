@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '$lib/ui/style/main.scss'
+	import './style.scss'
 	import { onMount } from 'svelte';
 	import '$lib/start'
 
